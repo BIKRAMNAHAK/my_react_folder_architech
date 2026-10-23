@@ -1,0 +1,301 @@
+/* ======================================================== */
+/* MODERN ENTERPRISE TECH HOME & PRODUCT CARD STYLING       */
+/* ======================================================== */
+
+/* Hero Banner: Deep Slate Space Mesh */
+.tech-hero-wrapper {
+  background: linear-gradient(135deg, #090d16 0%, #0f172a 45%, #1e1b4b 100%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-hero-wrapper::after {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.tech-hero-title {
+  letter-spacing: -0.5px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.tech-hero-subtitle {
+  color: #94a3b8 !important;
+  font-size: 1.05rem;
+}
+
+.tech-hero-img {
+  max-height: 300px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.4));
+  transition: transform 0.3s ease;
+}
+
+.tech-hero-img:hover {
+  transform: scale(1.02);
+}
+
+.tech-badge-pulse {
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  color: #a5b4fc;
+}
+
+/* Modern Tech Feature Assurance Cards */
+.tech-assurance-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  padding: 1.1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-assurance-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-color: #cbd5e1;
+}
+
+.tech-assurance-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Category Sections Container */
+.category-section-container {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+}
+
+.category-section-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1 0%, #3b82f6 50%, #06b6d4 100%);
+}
+
+.category-heading {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.3px;
+}
+
+.view-list-btn {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 0.4rem 1.1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.25);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.view-list-btn:hover {
+  background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+}
+
+/* Horizontal Scroll Container */
+.horizontal-scroll-wrapper {
+  position: relative;
+}
+
+.horizontal-scroll-row {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 0.5rem 0.25rem 1rem 0.25rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.horizontal-scroll-row::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontal-scroll-item {
+  flex: 0 0 185px;
+  max-width: 185px;
+}
+
+@media (max-width: 575.98px) {
+  .horizontal-scroll-item {
+    flex: 0 0 155px;
+    max-width: 155px;
+  }
+}
+
+/* Floating Scroll Chevrons */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 32px;
+  height: 58px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(4px);
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.scroll-btn:hover {
+  background: #4f46e5;
+  color: #ffffff;
+  border-color: #4f46e5;
+}
+
+.scroll-btn-left {
+  left: -8px;
+  border-radius: 0 8px 8px 0;
+}
+
+.scroll-btn-right {
+  right: -8px;
+  border-radius: 8px 0 0 8px;
+}
+
+/* ======================================================== */
+/* COMPACT MODERN TECH PRODUCT CARD                         */
+/* ======================================================== */
+
+.tech-product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+  border-radius: 12px;
+  background: #ffffff;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tech-product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(15, 23, 42, 0.08) !important;
+  border-color: #818cf8 !important;
+}
+
+.tech-card-img-container {
+  height: 125px;
+  background: radial-gradient(circle at center, #ffffff 60%, #f8fafc 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.5rem;
+}
+
+.tech-product-img {
+  max-height: 105px;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.25s ease;
+}
+
+.tech-product-card:hover .tech-product-img {
+  transform: scale(1.05);
+}
+
+.tech-product-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0f172a;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.25;
+  height: 2.1rem;
+}
+
+/* Compact Auto-calculated discount badge */
+.tech-badge-discount {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0.18rem 0.45rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.35);
+  letter-spacing: 0.2px;
+  z-index: 2;
+}
+
+/* Compact Order & Cart Buttons */
+.tech-btn-add {
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #334155;
+  font-weight: 600;
+  font-size: 0.74rem;
+  border-radius: 6px;
+  padding: 0.25rem 0.45rem;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.tech-btn-add:hover {
+  background-color: #eef2ff;
+  border-color: #818cf8;
+  color: #4f46e5;
+}
+
+.tech-btn-buy {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  font-size: 0.74rem;
+  border-radius: 6px;
+  padding: 0.25rem 0.45rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.2);
+  white-space: nowrap;
+}
+
+.tech-btn-buy:hover {
+  background: linear-gradient(135deg, #4338ca 0%, #3730a3 100%);
+  color: #ffffff;
+  box-shadow: 0 3px 10px rgba(79, 70, 229, 0.35);
+}

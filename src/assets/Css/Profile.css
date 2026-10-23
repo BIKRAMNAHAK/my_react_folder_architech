@@ -1,0 +1,17 @@
+/* Profile and Address Step-by-Step Modal Styling */
+.profile-step-modal .modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.address-item-card {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.address-item-card:hover {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1;
+}

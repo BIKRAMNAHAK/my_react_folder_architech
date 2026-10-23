@@ -1,0 +1,19 @@
+/* Step-by-Step Checkout Styling */
+.checkout-page {
+  background-color: #f1f3f6;
+}
+
+.step-num-badge {
+  width: 28px;
+  height: 28px;
+  font-size: 0.85rem;
+}
+
+.address-select-card {
+  transition: all 0.2s ease;
+}
+
+.address-select-card:hover {
+  border-color: #2874f0 !important;
+  box-shadow: 0 4px 12px rgba(40, 116, 240, 0.15);
+}

@@ -1,0 +1,14 @@
+/* Advertisement Landing Page Styling */
+.ad-offer-page {
+  background: #f8fafc;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1.5px;
+}
+
+@media (min-width: 992px) {
+  .border-end-lg {
+    border-right: 1px solid #e2e8f0;
+  }
+}

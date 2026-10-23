@@ -1,0 +1,27 @@
+/* Product Details Screen Styling */
+.main-image-box {
+  background: #ffffff;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-preview-img {
+  max-height: 350px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-thumb-item {
+  transition: all 0.2s ease;
+}
+
+.gallery-thumb-item:hover,
+.gallery-thumb-item.active-thumb {
+  border-color: #2874f0 !important;
+  box-shadow: 0 0 6px rgba(40, 116, 240, 0.35);
+}
+
+.gallery-thumb-list::-webkit-scrollbar {
+  height: 4px;
+}
